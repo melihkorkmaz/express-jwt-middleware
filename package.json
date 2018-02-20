@@ -14,8 +14,16 @@
     "token",
     "validation"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melihkorkmaz/express-jwt-middleware.git"
+  },
   "author": "Melih Korkmaz - mk@count.ly",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melihkorkmaz/express-jwt-middleware/issues"
+  },
+  "homepage": "https://github.com/melihkorkmaz/express-jwt-middleware",
   "devDependencies": {
     "uglifyjs-webpack-plugin": "^1.2.0",
     "webpack": "^3.11.0"
