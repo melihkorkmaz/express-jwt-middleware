@@ -8,14 +8,14 @@ It has build for validate and decode jwt token (which is created by https://www.
 ```
 
 ## Usage
-You can use it bot app level and route level.
+You can use it both app level and route level.
 ````
 const jwtMiddleware = require('express-jwt-middleware');
 var jwtCheck = jwtMiddleware('secretkey')
 ````
 
 ### Options
-You can pass string or object parameter to set options. If you pass string, code will be assume that it's your 
+You can pass string or object as parameter. If you pass string, code will be assume that it's your 
 secret key for jwt.
 
 Or you can send options object as:
