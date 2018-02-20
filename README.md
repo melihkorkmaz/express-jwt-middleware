@@ -8,10 +8,13 @@ It has build for validate and decode jwt token (which is created by https://www.
 ```
 
 ## Usage
-You can use it both app level and route level.
+You can use it both app level and route level. You will get your decoded token data in request object as "req.tokenData".
 ````
 const jwtMiddleware = require('express-jwt-middleware');
 var jwtCheck = jwtMiddleware('secretkey')
+app.get('/', jwtCheck, (req, res) => {
+    res.send(req.tokenData);
+});
 ````
 
 ### Options
@@ -25,6 +28,10 @@ var options = {
     secret : // Secret key for your jwt,
     ..anyJWTOptions // For more details please check https://www.npmjs.com/package/jsonwebtoken
 }
+var jwtCheck = jwtMiddleware(options)
+app.get('/', jwtCheck, (req, res) => {
+    res.send(req.tokenData);
+});
 ````
 
 If you set 'cert' and 'secret' at the same time, 'secret' will be used for jwt decode process. Please use correct one.
