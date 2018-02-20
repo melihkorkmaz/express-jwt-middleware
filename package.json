@@ -1,0 +1,26 @@
+{
+  "name": "express-jwt-middleware",
+  "libraryName": "jwtMiddleware",
+  "version": "1.0.0",
+  "description": "An express middleware for jsonwebtoken.",
+  "main": "dist/express-jwt-middleware.min.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "jsonwebtoken",
+    "jwt",
+    "express",
+    "token",
+    "validation"
+  ],
+  "author": "Melih Korkmaz - mk@count.ly",
+  "license": "ISC",
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.2.0",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.1.1"
+  }
+}
