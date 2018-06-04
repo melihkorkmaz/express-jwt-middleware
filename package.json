@@ -1,7 +1,7 @@
 {
   "name": "express-jwt-middleware",
   "libraryName": "jwtMiddleware",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "An express middleware for jsonwebtoken.",
   "main": "dist/express-jwt-middleware.min.js",
   "scripts": {
